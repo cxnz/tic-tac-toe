@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 80px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(39, 39, 39);
+}
+.game-buttons {
+    display: flex;
+    justify-content: center;
+}
+.new-game-btn {
+    padding: 10px;
+}
+.restart-btn {
+    padding: 10px;
+    margin-top: 5px;
+}
+.player-tag {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+.game {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0px;
+    flex-grow: 1;
+    padding: 5px;
+    margin: 9px;
+}
+.frags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    cursor: pointer;
+}
+.game-field {
+    display: flex;
+    justify-content: center;
+}
+.frags:not(:nth-child(3n)) {
+    border-right: 4px solid black;
+}
+.frags:not(:nth-last-child(-n+3)) {
+    border-bottom: 4px solid black;
+}
+.player-tag .player-x {
+    flex: 1;
+    font-size: 30px;
+    border-bottom: 4px solid blue;
+    padding-bottom: 7px;
+}
+.player-tag .player-o {
+    flex: 1;
+    font-size: 30px;
+    border-bottom: 4px solid red;
+    padding-bottom: 7px;
+}
+.frags:hover {
+    background: rgb(180, 173, 173);
+}
+.selection-title {
+    display: flex;
+    justify-content: center;
+}
+.select-buttons {
+    display: flex;
+    justify-content: center;
+}
+#single {
+    padding: 10px;
+}
+#multi {
+    padding: 10px;
+}
+.player-x.active {
+    border-bottom: 10px solid blue;
+    color: blue
+}
+.player-o.active {
+    border-bottom: 10px solid red;
+    color: red;
+}
+.frag-X {
+    color: blue;
+    font-weight: 700;
+}
+.frag-O {
+    color: red;
+    font-weight: 700;
+}
+.frag-winner {
+    background-color: rgb(165, 165, 165);
+}
+.frag-winner span {
+    color: rgb(0, 0, 0);
+}
+.winner {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+}
+.draw {
+    background-color: rgb(165, 165, 165);
+}
+.player-x.inactive {
+    border-bottom: 4px solid black;
+    color: black;
+}
+.player-o.inactive {
+    border-bottom: 4px solid black;
+    color: black;
+}
