@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="tic-tac-toe.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div>
+        <h1>
+            2 Player
+            <br>
+            Tic-Tac-Toe
+        </h1>
+        <div class="game-buttons">
+            <div class="restart-btn" id="restart">
+                <button class="btn btn-dark restart">Restart your game</button>
+            </div>
+        </div>
+        <hr>
+        <div id="selection"></div>
+        <br>
+        <div class="game-field">
+            <div class="game">
+                <div class="player-tag">
+                    <div class="player-x">
+                        <span> Player X </span>
+                    </div>
+                    <div class="player-o">
+                        <span> Player O</span>
+                    </div>
+                </div>
+                <div class="game-board" id="gameBoard">
+                    <div class="frags" id="0"></div>
+                    <div class="frags" id="1"></div>
+                    <div class="frags" id="2"></div>
+                    <div class="frags" id="3"></div>
+                    <div class="frags" id="4"></div>
+                    <div class="frags" id="5"></div>
+                    <div class="frags" id="6"></div>
+                    <div class="frags" id="7"></div>
+                    <div class="frags" id="8"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="winner" id="winner"></div>
+</body>
+</html>
